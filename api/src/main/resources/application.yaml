@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: ennui_api
+  datasource:
+    url: jdbc:postgresql://localhost:5432/app_db
+    username: app_user
+    password: app_password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
